@@ -1,7 +1,14 @@
-
 [project]
 name = "stacks-project"
+requirements = []
+[contracts.marketplace]
+path = "contracts/marketplace.clar"
+depends_on = ["sip009-nft-trait"]
 
-[contracts]
+[contracts.sip009-nft-trait]
+path = "contracts/sip009-nft-trait.clar"
+depends_on = []
 
-[notebooks]
+[contracts.token-A]
+path = "contracts/token-A.clar"
+depends_on = ["sip009-nft-trait"]
