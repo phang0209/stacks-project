@@ -1,0 +1,73 @@
+#V2
+(contract-call? .token-A mint)
+::get_assets_maps
+(contract-call? .token-A transfer u2 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE 'ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK)
+::get_assets_maps
+(contract-call? .token-A get-owner u1)
+(contract-call? .token-A get-owner u2)
+(contract-call? .token-A get-owner u0)
+(contract-call? .token-A get-owner u3)
+(contract-call? .marketplace list-nft token-A u1 u1000)
+(contract-call? .marketplace list-nft .token-A u1 u1000)
+::get_assets_maps
+(contract-call? .marketplace list-nft .token-A u1 u1000)
+::get_assets_maps
+(contract-call? .marketplace list-nft .token-A u2 u1000)
+(contract-call? .marketplace cancel-listing .token-A u1)
+(contract-call? .marketplace cancel-listing .token-A u0)
+::get_assets_maps
+(contract-call? .marketplace list-nft .token-A u2 u1000)
+(contract-call? .marketplace list-nft .token-A u1 u1000)
+(contract-call? .marketplace cancel-listing .token-A u1)
+(contract-call? .marketplace list-nft .token-A u5 u1000)
+(contract-call? .marketplace list-nft .token-A u3 u1000)
+::get_assets_maps
+(contract-call? .marketplace cancel-listing .token-A u5)
+(contract-call? .marketplace cancel-listing .token-A u1)
+(contract-call? .marketplace cancel-listing .token-A u2)
+(contract-call? .marketplace cancel-listing .token-A u3)
+(contract-call? .marketplace cancel-listing .token-A u4)
+(contract-call? .marketplace list-nft .token-A u1 u1000)
+(contract-call? .marketplace fulfill-listing .token-A u2)
+(contract-call? .marketplace fulfill-listing .token-A u1)
+(contract-call? .marketplace fulfill-listing .token-A u3)
+(contract-call? .marketplace fulfill-listing .token-A u2)
+::set_tx_sender ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing .token-A u2)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u2)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u2)
+::get_assets_maps
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u1 u2000)
+::get_assets_maps
+::set_tx_sender ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace cancel-listing .token-A u3)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace cancel-listing .marketplace u3)
+(contract-call? .marketplace cancel-listing .marketplace u3)
+(contract-call? .marketplace cancel-listing .token-A u3)
+::get_assets_maps
+::set_tx_sender ST20ATRN26N9P05V2F1RHFRV24X8C8M3W54E427B2
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u1 u2000)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace cancel-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u3)
+::set_tx_sender ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u3 u500)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u2 u500)
+::get_assets_maps
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u2 u500)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace cancel-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u3)
+::get_assets_maps
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u4)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u2)
+::set_tx_sender ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE
+(contract-call? .token-A mint)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u4)
+::get_assets_maps
+::set_tx_sender ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u3 u5000)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A get-last-token-id)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u5 u5000)
+::set_tx_sender ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace list-nft 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u3 u5000)
+::set_tx_sender ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u4)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.marketplace fulfill-listing 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.token-A u5)
+::get_assets_maps

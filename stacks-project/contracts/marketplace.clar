@@ -19,13 +19,13 @@
 (define-constant err-wrong-trait-reference (err u202))
 
 ;; read-only functions
-;; get-listing: get the listing of the specified id from the listing map
+;; get-listing
 (define-read-only (get-listing (listing-id uint))
     (map-get? listings {id: listing-id})
 )
 
 ;; public functions
-;; list-nft: listing the nft (add a new listing to the listings map)
+;; list-nft
 (define-public (list-nft (nft-contract <nft-trait>) (token-id uint) (price uint))
     (let
         (
@@ -46,7 +46,7 @@
     )
 )
 
-;; cancel-listing: cancel the listing with the specified listing (remove the specified listing from the listings map)
+;; cancel-listing
 (define-public (cancel-listing (nft-contract <nft-trait>) (listing-id uint))
     (let
         (
@@ -62,7 +62,7 @@
     )
 )
 
-;; fulfill-listing: fulfill the specified listing in the market
+;; fulfill-listing:
 (define-public (fulfill-listing (nft-contract <nft-trait>) (listing-id uint))
     (let
         (

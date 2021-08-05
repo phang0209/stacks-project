@@ -3,7 +3,7 @@
 
 (impl-trait .sip009-nft-trait.nft-trait)
 
-;; constants, maps, vars
+;; constants, maps, vars, nft
 (define-constant contract-owner tx-sender)
 (define-non-fungible-token token-A uint)
 (define-data-var last-token-id uint u0)
@@ -12,23 +12,23 @@
 (define-constant err-tx-sender-not-sender (err u101))
 
 ;; read-only functions
-;; sip009: get the last token id
+;; sip009: get-last-token-id
 (define-read-only (get-last-token-id)
     (ok (var-get last-token-id))
 )
 
-;; sip009: get URI for this token
+;; sip009: get-token-uri
 (define-read-only (get-token-uri (uri uint))
     (ok none)
 )
 
-;; sip009: get owner of the token
+;; sip009: get-owner
 (define-read-only (get-owner (token-id uint))
     (ok (nft-get-owner? token-A token-id))
 )
 
 ;; public functions
-;; mint function (generate new nft)
+;; mint
 (define-public (mint)
     (let
         (
