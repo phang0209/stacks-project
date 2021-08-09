@@ -1,7 +1,7 @@
 # stacks-project
 
 ### HKUST Stacks Summer Course
-Aidan NG
+Aidan NG  
 This project implements a SIP009 compliant non-fungible token and a marketplace contract
 
 ##### Functions
