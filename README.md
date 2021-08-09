@@ -13,6 +13,7 @@ token-A:
 - public
   - (SIP009) transfer
   - mint
+
 marketplace:
 - read only
   - get-listing
@@ -26,6 +27,7 @@ marketplace:
 token-A:
 - (err u100): tx-sender is different from the nft owner
 - (err u101): tx-sender is different from the sender  
+
 marketplace:
 - (err u200): the inputted listing id is not referring to a valid listing (id does not exist / listing was deleted)
 - (err u201): tx-sender is different from the nft maker
